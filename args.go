@@ -11,7 +11,7 @@ type Resource struct {
 	Regions []string
 }
 
-func parseArgs() []Resource {
+func ParseArgs() []Resource {
 	args := os.Args[1:] // Skip the program name
 
 	if len(args) == 0 {

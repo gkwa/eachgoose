@@ -5,7 +5,7 @@ import (
 )
 
 func Execute() int {
-	resources := parseArgs()
+	resources := ParseArgs()
 
 	for _, res := range resources {
 		slog.Debug("args", "service", res.Service, "region", res.Regions)
