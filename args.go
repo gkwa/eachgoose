@@ -25,7 +25,7 @@ func ParseArgs() []Resource {
 		slog.Debug("args", "arg", arg)
 		parts := strings.Split(arg, ":")
 		if len(parts) != 2 {
-			slog.Debug("Invalid resource format: %s\n", arg)
+			slog.Debug("invalid resource format", "arg", arg)
 			continue
 		}
 
